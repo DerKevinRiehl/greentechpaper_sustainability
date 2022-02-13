@@ -19,10 +19,12 @@ stimulate green innovation.
 
 <img src="https://github.com/DerKevinRiehl/greentechpaper_sustainability/blob/main/github_imgs/titleimage.PNG" width="400">
 
-## Data and Code availability
+## Data, Code and Analysis Workflow availability
 All required data and sourcecode to reproduce the analysis can be found on this GitHub repository.
+Please find the [analysis workflow](https://github.com/DerKevinRiehl/greentechpaper_sustainability/blob/main/AnalysisWorkflow.ipynb) described and attached.
 
-## Reproducing the analysis fo this study
+
+## Reproducing the analysis of this study
 The analysis is based on the programming languages "Python 3.7" and "R 4.0.2". Related packages are mentioned within the manuscript.
 The analysis workflow is outlined (and can be viewed on the browser) in a Jupyter Notebook format.
 Before cloning and running the jupyter notebook you might consider extracting the csv file from the ZIP archive in the folder "input_data".
