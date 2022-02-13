@@ -1,0 +1,33 @@
+[1] "### LoadData"
+[1] "### CRCH Regression on CAR_MM_norm"
+
+Call:
+crch(formula = CAR_MM_norm ~ X0 + X1 + X2 + X3 + X4 + X5 + X6, data = BigData1, dist = "student", point = 0, 
+    direction = "left")
+
+Standardized residuals:
+    Min      1Q  Median      3Q     Max 
+-2.7176 -0.7470 -0.0585  0.7086  8.3525 
+
+Coefficients (location model):
+              Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  0.2632260  0.0012105 217.453  < 2e-16 ***
+X0          -0.0006419  0.0001064  -6.033 1.61e-09 ***
+X1          -0.0016714  0.0001445 -11.565  < 2e-16 ***
+X2           0.0006462  0.0003944   1.639 0.101285    
+X3          -0.0015343  0.0004443  -3.453 0.000554 ***
+X4          -0.0133011  0.0006300 -21.112  < 2e-16 ***
+X5          -0.0199318  0.0009779 -20.383  < 2e-16 ***
+X6          -0.0016190  0.0013215  -1.225 0.220547    
+
+Coefficients (scale model with log link):
+             Estimate Std. Error z value Pr(>|z|)    
+(Intercept) -2.123825   0.009843  -215.8   <2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1 
+
+Distribution: student
+Df: 8.14
+Log-likelihood:  7462 on 10 Df
+Number of iterations in BFGS optimization: 17 
+[1] "### Save Predictions to CSV"

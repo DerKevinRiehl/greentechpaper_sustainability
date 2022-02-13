@@ -1,0 +1,175 @@
+[1] "### LoadData"
+[1] "### Linear Regression on CAR_CMR_norm"
+
+Call:
+lm(formula = CAR_CMR_norm ~ X0 + X1 + X2 + X3 + X4 + X5 + X6, 
+    data = BigData)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.44538 -0.11461 -0.01326  0.09913  0.96136 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  0.3642300  0.0016880 215.774  < 2e-16 ***
+X0           0.0000929  0.0001513   0.614    0.539    
+X1          -0.0017701  0.0002056  -8.611  < 2e-16 ***
+X2          -0.0030350  0.0005635  -5.386 7.37e-08 ***
+X3          -0.0001959  0.0006369  -0.308    0.758    
+X4          -0.0118866  0.0008720 -13.631  < 2e-16 ***
+X5          -0.0227556  0.0013500 -16.856  < 2e-16 ***
+X6           0.0095757  0.0018969   5.048 4.55e-07 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.1661 on 9698 degrees of freedom
+  (3191 observations deleted due to missingness)
+Multiple R-squared:  0.06013,	Adjusted R-squared:  0.05945 
+F-statistic: 88.63 on 7 and 9698 DF,  p-value: < 2.2e-16
+
+[1] "### Linear Regression on CAR_MM_norm"
+
+Call:
+lm(formula = CAR_MM_norm ~ X0 + X1 + X2 + X3 + X4 + X5 + X6, 
+    data = BigData)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.34040 -0.09725 -0.01403  0.07727  0.98655 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  0.2712995  0.0012163 223.050  < 2e-16 ***
+X0          -0.0005480  0.0001101  -4.978 6.51e-07 ***
+X1          -0.0016444  0.0001490 -11.036  < 2e-16 ***
+X2           0.0005504  0.0004116   1.337   0.1812    
+X3          -0.0020762  0.0004630  -4.484 7.38e-06 ***
+X4          -0.0144179  0.0006352 -22.700  < 2e-16 ***
+X5          -0.0224311  0.0009928 -22.593  < 2e-16 ***
+X6          -0.0023677  0.0013671  -1.732   0.0833 .  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.1381 on 12889 degrees of freedom
+Multiple R-squared:  0.09038,	Adjusted R-squared:  0.08989 
+F-statistic:   183 on 7 and 12889 DF,  p-value: < 2.2e-16
+
+[1] "### Truncated Regression on CAR_CMR_norm"
+
+Call:
+truncreg(formula = CAR_CMR_norm ~ X0 + X1 + X2 + X3 + X4 + X5 + 
+    X6, data = BigData, point = 0, direction = "left")
+
+BFGS maximization method
+109 iterations, 0h:0m:1s 
+g'(-H)^-1g = 2.97E-07 
+ 
+
+
+Coefficients :
+               Estimate  Std. Error  t-value  Pr(>|t|)    
+(Intercept)  0.35328288  0.00199048 177.4860 < 2.2e-16 ***
+X0           0.00011303  0.00017257   0.6550    0.5125    
+X1          -0.00195292  0.00023013  -8.4863 < 2.2e-16 ***
+X2          -0.00350271  0.00064412  -5.4380 5.388e-08 ***
+X3          -0.00013220  0.00072243  -0.1830    0.8548    
+X4          -0.01344656  0.00098383 -13.6676 < 2.2e-16 ***
+X5          -0.02559758  0.00153058 -16.7241 < 2.2e-16 ***
+X6           0.01055998  0.00213456   4.9471 7.531e-07 ***
+sigma        0.17691461  0.00155094 114.0695 < 2.2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Log-Likelihood: 3855.7 on 9 Df
+[1] "### Truncated Regression on CAR_MM_norm"
+
+Call:
+truncreg(formula = CAR_MM_norm ~ X0 + X1 + X2 + X3 + X4 + X5 + 
+    X6, data = BigData, point = 0, direction = "left")
+
+BFGS maximization method
+111 iterations, 0h:0m:2s 
+g'(-H)^-1g = 9.43E-07 
+ 
+
+
+Coefficients :
+               Estimate  Std. Error  t-value  Pr(>|t|)    
+(Intercept)  0.25181206  0.00170039 148.0905 < 2.2e-16 ***
+X0          -0.00065243  0.00013784  -4.7331 2.211e-06 ***
+X1          -0.00193182  0.00018445 -10.4736 < 2.2e-16 ***
+X2           0.00067854  0.00051586   1.3154   0.18839    
+X3          -0.00238765  0.00058065  -4.1120 3.922e-05 ***
+X4          -0.01767738  0.00078354 -22.5608 < 2.2e-16 ***
+X5          -0.02793557  0.00124361 -22.4633 < 2.2e-16 ***
+X6          -0.00313051  0.00169394  -1.8481   0.06459 .  
+sigma        0.15466970  0.00131191 117.8964 < 2.2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Log-Likelihood: 7780.9 on 9 Df
+[1] "### CRCH Regression on CAR_CMR_norm"
+
+Call:
+crch(formula = CAR_CMR_norm ~ X0 + X1 + X2 + X3 + X4 + 
+    X5 + X6, data = BigData, dist = "student", point = 0, 
+    direction = "left")
+
+Standardized residuals:
+    Min      1Q  Median      3Q     Max 
+-2.8304 -0.7191 -0.0491  0.6763  6.3370 
+
+Coefficients (location model):
+              Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  3.595e-01  1.704e-03 210.980  < 2e-16 ***
+X0          -3.094e-05  1.490e-04  -0.208    0.836    
+X1          -1.669e-03  2.060e-04  -8.101 5.44e-16 ***
+X2          -3.029e-03  5.514e-04  -5.493 3.96e-08 ***
+X3           1.914e-04  6.272e-04   0.305    0.760    
+X4          -1.139e-02  8.728e-04 -13.055  < 2e-16 ***
+X5          -2.072e-02  1.360e-03 -15.232  < 2e-16 ***
+X6           9.736e-03  1.887e-03   5.159 2.49e-07 ***
+
+Coefficients (scale model with log link):
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept) -1.87861    0.01118    -168   <2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1 
+
+Distribution: student
+Df: 13.16
+Log-likelihood:  3711 on 10 Df
+Number of iterations in BFGS optimization: 16 
+[1] "### CRCH Regression on CAR_MM_norm"
+
+Call:
+crch(formula = CAR_MM_norm ~ X0 + X1 + X2 + X3 + X4 + 
+    X5 + X6, data = BigData, dist = "student", point = 0, 
+    direction = "left")
+
+Standardized residuals:
+    Min      1Q  Median      3Q     Max 
+-2.7176 -0.7470 -0.0585  0.7086  8.3525 
+
+Coefficients (location model):
+              Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  0.2632260  0.0012105 217.453  < 2e-16 ***
+X0          -0.0006419  0.0001064  -6.033 1.61e-09 ***
+X1          -0.0016714  0.0001445 -11.565  < 2e-16 ***
+X2           0.0006462  0.0003944   1.639 0.101285    
+X3          -0.0015343  0.0004443  -3.453 0.000554 ***
+X4          -0.0133011  0.0006300 -21.112  < 2e-16 ***
+X5          -0.0199318  0.0009779 -20.383  < 2e-16 ***
+X6          -0.0016190  0.0013215  -1.225 0.220547    
+
+Coefficients (scale model with log link):
+             Estimate Std. Error z value Pr(>|z|)    
+(Intercept) -2.123825   0.009843  -215.8   <2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1 
+
+Distribution: student
+Df: 8.14
+Log-likelihood:  7462 on 10 Df
+Number of iterations in BFGS optimization: 17 
+[1] "### Save Predictions to CSV"
