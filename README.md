@@ -4,17 +4,19 @@ Published in Journal: "Sustainability"
 
 ## Abstract
 Green innovation and technology diffusion must be financially and commercially attractive
-to convince corporate decision makers. This paper focuses on the factors that determine the financial
-outcome of successful green innovation activities. We employ a large and cross-industry dataset
-including more than 97,954 reports on corporate environmentalism from 286 international listed
-companies and show hat economic, political, cultural, firm specific, investor related and governance
-factors significantly determine the financial performance of green innovation, measured by abnormal
-returns. Moreover, we find opposing influence for several factors that benefit earlier stages of
+to convince corporate decision-makers. This paper focuses on the factors that determine the financial
+outcome of successful green innovation activities conducted by large, listed companies. We employ
+a cross-industry dataset including more than 97,954 reports on corporate environmentalism from
+286 international listed companies. Our results indicate that economic, political, cultural, firmspecific,
+investor-related and governance factors significantly determine the financial performance
+of green innovation, measured by abnormal returns. Moreover, we can show that factors that
+reduce the competition in green innovation markets benefit the financial success of firms operating
+on these. Finally, we find an opposing influence for several factors that benefit earlier stages of
 innovation (e.g., research output) while harming the later stages (e.g., market introduction and
-financial performance). The findings implicate, that a spatial separation strategy for different stages
+financial performance). These findings imply, that a spatial separation strategy for different stages
 of innovation supports corporate environmentalism activities. Moreover, physical property rights,
-the governments willingness to support green technologies and economic framework conditions
-such as oil price, GDP or public R&D budget need to be balanced by policy makers to address and
+the governments’ willingness to support green technologies, and economic framework conditions
+such as oil price, GDP, or public R&D budget need to be balanced by policymakers to address and
 stimulate green innovation.
 
 <img src="https://github.com/DerKevinRiehl/greentechpaper_sustainability/blob/main/github_imgs/titleimage.PNG" width="400">
