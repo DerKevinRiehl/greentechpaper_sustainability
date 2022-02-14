@@ -1,4 +1,4 @@
-# GitHub repository of "Political and socio-economic factors that determine financial outcome of successful green innovation"
+# "Political and socio-economic factors that determine financial outcome of successful green innovation"
 Authors: Kevin Riehl, Florian Kiesel and Dirk Schiereck
 Published in Journal: "Sustainability"
 
